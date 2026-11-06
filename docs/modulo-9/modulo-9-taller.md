@@ -1,6 +1,6 @@
 # Taller de ventas y posventa de Comercial La Esquina
 
-Clase 9 · Integración multisistema y operación confiable  
+Clase 9 · Integración multisistema y operación confiable
 Mentor: William Vergara · Encuentro: 6 de noviembre de 2026 · Entrega: 20 de noviembre de 2026
 
 Construye un canal donde un cliente consulta conocimiento de Obsidian, revisa disponibilidad, obtiene una cotización, genera un pedido y adjunta un comprobante. Después puede consultar su envío e historial, repetir una compra y solicitar atención de una persona, una devolución o un reembolso administrativo.
