@@ -25,3 +25,11 @@ backend/.env.*
 *.db-*
 .coverage
 htmlcov/
+
+# Material docente local: conservar fuera del repositorio de estudiantes.
+/materiales/
+/docente/
+/docs/modulo-9/
+/docs/heredado-modulo-8/
+/docs/TALLER.md
+**/*guion-docente.*

@@ -12,7 +12,7 @@ Las escrituras conservan la protección heredada X-Practica-Token. Sin token, un
 - GET /mesa: interfaz de operador heredada.
 - GET /construccion: etapas y materiales.
 - GET /api/modulo-9/estado: capacidades y procedencia.
-- GET /materiales/taller, /materiales/politicas y /materiales/casos: descargas desde lista fija, sin rutas arbitrarias.
+- Los materiales docentes se distribuyen por separado. No existen rutas de descarga /materiales/ en la app pública.
 
 CONTRATOS.md conserva la API de la base. Todavía no tiene aislamiento por cliente. La etapa 1 protege también esas rutas, archivos, listados y herramientas.
 
