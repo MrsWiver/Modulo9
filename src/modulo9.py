@@ -2,8 +2,7 @@
 
 No conecta automáticamente notas a un modelo ni fabrica datos operacionales.
 """
-from flask import Blueprint, abort, jsonify, render_template, send_file
-from .db import ROOT
+from flask import Blueprint, jsonify, render_template
 
 BASE_COMMIT = '096d8fe37259a4c5d363c6eb666dc2976e6d0bc9'
 ETAPAS = [
@@ -52,19 +51,6 @@ def registrar_modulo9(app, token):
     @bp.get('/construccion')
     def construccion():
         return render_template('construccion.html', etapas=ETAPAS, csrf_token=token)
-
-    @bp.get('/materiales/<nombre>')
-    def material(nombre):
-        permitidos = {
-            'taller': 'modulo-9-taller.md',
-            'politicas': 'modulo-9-politicas-y-datos.md',
-            'casos': 'modulo-9-casos-y-evidencias.md',
-        }
-        if nombre not in permitidos:
-            abort(404, description='No existe ese material.')
-        return send_file(ROOT/'docs/modulo-9'/permitidos[nombre],
-                         as_attachment=True, download_name=permitidos[nombre],
-                         mimetype='text/markdown; charset=utf-8')
 
     @bp.get('/api/modulo-9/estado')
     def estado():

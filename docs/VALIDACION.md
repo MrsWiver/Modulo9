@@ -38,3 +38,10 @@ Las notas documentan precios de referencia y existencias históricas, sin declar
 El 6 de noviembre se amplió la guía a 15 etapas, con preparación desde el repositorio público Modulo9, secuencia de construcción, explicación de cada prompt, validaciones guiadas, recuperación y guion de demostración. Se conservaron las políticas y el vault existentes. Se sincronizaron docs/modulo-9/modulo-9-taller.md, materiales/modulo-9-taller.md y su HTML. No se implementaron ni acreditaron nuevas capacidades de cliente.
 
 Regresiones de la app local: 65 pruebas aprobadas. Revisión del material HTML con Chrome sin interfaz: 15 etapas, 34 controles de copia, acción de copiar comprobada, anclas y archivos locales vinculados válidos; ancho móvil de página y ventana de 390 píxeles, sin desbordamiento. Capturas de portada, cotización y etapa de cuentas revisadas en escritorio y móvil. Esta revisión corresponde al documento del taller, no a una implementación de esas funciones. Sin claves leídas ni llamadas reales a IA.
+
+
+## Exclusión del material docente
+
+Las carpetas materiales/, docente/, docs/modulo-9/ y docs/heredado-modulo-8/, docs/TALLER.md y los guiones docentes quedan ignorados por Git. Los archivos se retiraron del índice conservando sus copias locales. El paquete de estudiantes excluye ese contenido incluso cuando existe localmente y solo incluye los contratos y la validación técnica de docs/. La app ya no sirve descargas /materiales/ ni enlaza a ellas desde /construccion.
+
+Verificación: 65 pruebas aprobadas, incluido empaquetado y arranque independiente sin material docente; rutas docentes devuelven 404. Pantalla de construcción revisada en Chrome y ancho móvil de 390 píxeles sin desbordamiento. No se modificaron el vault, el catálogo ni las funciones comerciales pendientes. Los commits anteriores conservan el material histórico; esta exclusión no reescribe el historial de Git.
