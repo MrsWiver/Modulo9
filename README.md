@@ -27,6 +27,8 @@ cd Modulo9
 
 El repositorio contiene la app, el vault y los materiales. En materiales/ puedes abrir modulo-9-clase.html o modulo-9-presentacion.html y consultar el guion del docente en PDF o Word. Las páginas son archivos locales; crear el repositorio no despliega un sitio.
 
+Para construir, abre materiales/modulo-9-taller.html. El taller desarrolla 15 etapas con pasos, prompts explicados, validación manual, recuperación y evidencia. Su versión editable está en docs/modulo-9/modulo-9-taller.md. Los prompts son encargos de implementación; las capacidades pendientes de esta base no se habilitan por actualizar la guía.
+
 ## Preparar e iniciar
 
 Requiere Python 3.11+ y uv. Abre esta carpeta con el asistente de programación y pide que ejecute los comandos. Son iguales en Windows y macOS:

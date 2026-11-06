@@ -31,3 +31,10 @@ El 6 de noviembre se amplió el vault a 2.191 notas: 1.250 productos, cinco cate
 Pytest: 65 pruebas aprobadas tras la ampliación. Se comprueban precios y nombres contra cada producto de la semilla; cobertura de proveedores e inventario; integridad de hashes; IDs y enlaces internos válidos; notas públicas sin enlaces a material interno; regeneración que conserva ediciones humanas; y ZIP independiente con todos los documentos. La regeneración se repitió sin cambios correctamente.
 
 Las notas documentan precios de referencia y existencias históricas, sin declarar disponibilidad actual. Se conservaron estados y fechas originales, incluidas alertas de vencimiento. La conexión al bot sigue pendiente; los metadatos no son por sí mismos un control de acceso. No se exportaron compradores, ventas de trabajo, conversaciones, claves o contraseñas. No hubo llamadas a modelos ni escrituras en la base de trabajo.
+
+
+## Desarrollo del taller paso a paso
+
+El 6 de noviembre se amplió la guía a 15 etapas, con preparación desde el repositorio público Modulo9, secuencia de construcción, explicación de cada prompt, validaciones guiadas, recuperación y guion de demostración. Se conservaron las políticas y el vault existentes. Se sincronizaron docs/modulo-9/modulo-9-taller.md, materiales/modulo-9-taller.md y su HTML. No se implementaron ni acreditaron nuevas capacidades de cliente.
+
+Regresiones de la app local: 65 pruebas aprobadas. Revisión del material HTML con Chrome sin interfaz: 15 etapas, 34 controles de copia, acción de copiar comprobada, anclas y archivos locales vinculados válidos; ancho móvil de página y ventana de 390 píxeles, sin desbordamiento. Capturas de portada, cotización y etapa de cuentas revisadas en escritorio y móvil. Esta revisión corresponde al documento del taller, no a una implementación de esas funciones. Sin claves leídas ni llamadas reales a IA.
