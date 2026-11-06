@@ -1,0 +1,16 @@
+{
+  "origen": "fixture_de_diseno_no_importado",
+  "clientes": [
+    {
+      "alias": "ana",
+      "nombre": "Ana de práctica",
+      "correo": "ana@example.test"
+    },
+    {
+      "alias": "bruno",
+      "nombre": "Bruno de práctica",
+      "correo": "bruno@example.test"
+    }
+  ],
+  "nota": "No existen cuentas ni contraseñas creadas. La etapa 1 implementa registro, sesiones y propiedad. No asignar ventas por nombre o correo."
+}

@@ -1,0 +1,22 @@
+{
+  "nombre": "Módulo 9",
+  "version_base": "0.1.0",
+  "tipo": "base_para_construir",
+  "origen_repositorio": "https://github.com/MrsWiver/comercial-la-esquina-modulo-8",
+  "origen_commit": "096d8fe37259a4c5d363c6eb666dc2976e6d0bc9",
+  "fecha_preparacion": "2026-11-06",
+  "nuevo_puerto": 8009,
+  "autenticacion_clientes": false,
+  "chat_cliente_con_vault": false,
+  "llamadas_ia_esta_preparacion": 0,
+  "vault": {
+    "corte": "2026-11-06",
+    "notas": 2191,
+    "productos": 1250,
+    "proveedores_internos": 75,
+    "registros_inventario_internos": 827,
+    "preguntas_frecuentes": 32,
+    "conectado_al_bot": false
+  },
+  "repositorio_modulo_9": "https://github.com/MrsWiver/Modulo9"
+}
