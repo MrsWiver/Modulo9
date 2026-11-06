@@ -10,8 +10,7 @@ from src.db import ROOT, construir, conectar
 from src.migraciones import migrar
 
 ARCHIVOS=('README.md','AGENTS.md','pyproject.toml','uv.lock','.gitignore','.env.example','BASE.json')
-CARPETAS=('src','templates','static','scripts','tests','soportes','prompts','docs','conocimiento','fixtures')
-DOCS_TECNICOS={'CONTRATOS.md','CONTRATOS-M9.md','VALIDACION.md'}
+CARPETAS=('src','templates','static','scripts','tests','soportes','prompts','docs','materiales','conocimiento','fixtures')
 OMITIR={'__pycache__','.pytest_cache','.venv','.DS_Store','Icon\r'}
 
 def empaquetar(destino):
@@ -32,8 +31,7 @@ def empaquetar(destino):
         for name in (*CARPETAS,'datos/semilla'):
             for source in (ROOT/name).rglob('*'):
                 relative=source.relative_to(ROOT)
-                # El material local ignorado tampoco pertenece al paquete de estudiantes.
-                if name=='docs' and relative.as_posix() not in {f'docs/{n}' for n in DOCS_TECNICOS}:
+                if 'guion-docente' in source.name or source.name.startswith('GUIA-DOCENTE.'):
                     continue
                 if any(part in OMITIR or part.startswith('.env') for part in relative.parts):
                     continue

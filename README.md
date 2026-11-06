@@ -9,7 +9,7 @@ Base inicial de Comercial La Esquina para construir integración multisistema y 
 - OCR y agente administrativo opcionales al configurar una clave propia. No se invocan al abrir la portada ni al instalar.
 - Referencias de inventario en lectura: 827 filas y 75 proveedores sin contactos.
 - Vault completo con 2.191 notas: 1.250 fichas de producto, cinco índices de categoría, ocho políticas, guías, 32 preguntas frecuentes y referencias internas de 75 proveedores y 827 registros de inventario.
-- Ruta de construcción, contratos técnicos y fixtures ficticios de diseño.
+- Ruta de construcción, taller completo, contratos, fixtures de diseño y matriz de casos.
 - Pruebas y empaquetador que entrega una práctica limpia e independiente.
 
 ## Por construir
@@ -25,9 +25,11 @@ git clone https://github.com/MrsWiver/Modulo9.git
 cd Modulo9
 ```
 
-El repositorio contiene la app inicial, el vault, los contratos técnicos y las pruebas. El taller, las clases, la presentación, el guion y las respuestas del docente se entregan por separado.
+El repositorio contiene la app, el vault y los materiales para estudiantes. En materiales/ puedes abrir modulo-9-clase.html o modulo-9-presentacion.html y seguir el taller paso a paso. Las páginas son archivos locales; crear el repositorio no despliega un sitio.
 
-El material docente local se guarda en materiales/, docente/, docs/modulo-9/, docs/heredado-modulo-8/ o docs/TALLER.md. Estas rutas están ignoradas por Git y excluidas del paquete de estudiantes. Los archivos que ya tengas allí se conservan en tu equipo.
+Para construir, abre materiales/modulo-9-taller.html. El taller desarrolla 15 etapas con pasos, prompts explicados, validación manual, recuperación y evidencia. Su versión editable está en docs/modulo-9/modulo-9-taller.md. Los prompts son encargos de implementación; las capacidades pendientes de esta base no se habilitan por actualizar la guía.
+
+Los guiones, guías y respuestas exclusivos del docente se conservan localmente en docente/ o como archivos guion-docente y GUIA-DOCENTE. Solo esos documentos se excluyen mediante .gitignore y del paquete de estudiantes.
 
 ## Preparar e iniciar
 
@@ -44,7 +46,7 @@ Abre http://127.0.0.1:8009. Detén con Ctrl+C. El inicio conserva la práctica e
 
 - /: portada y catálogo.
 - /mesa: interfaz operativa heredada.
-- /construccion: capacidades y etapas de construcción.
+- /construccion: etapas y materiales descargables.
 - /api/modulo-9/estado: capacidades explícitas y procedencia.
 
 Si el puerto está ocupado:
@@ -79,7 +81,7 @@ scripts.generar_vault permite reproducir el catálogo documental sin cambiar la 
 
 ## Construcción
 
-Lee AGENTS.md y los contratos técnicos de docs/. Sigue el taller entregado por separado. Si recibiste esta carpeta o ZIP, úsala como punto de partida: no clones encima la clase 8. La etapa 0 verifica esta base y BASE.json. Construye una etapa, comprueba y continúa. fixtures/ describe clientes ficticios, pero no importa cuentas ni contraseñas. No asignes ventas a cuentas nuevas por coincidencia de nombre o correo.
+Lee AGENTS.md y docs/TALLER.md. Los tres materiales completos están en docs/modulo-9/. Si recibiste esta carpeta o ZIP, úsala como punto de partida: no clones encima la clase 8. La etapa 0 verifica esta base y BASE.json. Construye una etapa, comprueba y continúa. fixtures/ describe clientes ficticios, pero no importa cuentas ni contraseñas. No asignes ventas a cuentas nuevas por coincidencia de nombre o correo.
 
 ## Pruebas y distribución
 
@@ -88,7 +90,7 @@ uv run pytest -q
 uv run python -m scripts.empaquetar
 ```
 
-El paquete modulo-9-inicial.zip aparece junto a esta carpeta y contiene raíz modulo-9/. Incluye vault, documentación técnica, fixtures, una SQLite nueva migrada y los doce soportes autorizados. No incluye claves, historial personal, respaldos, entornos ni cachés. Las pruebas nuevas validan la base y su paquete, no las capacidades pendientes.
+El paquete modulo-9-inicial.zip aparece junto a esta carpeta y contiene raíz modulo-9/. Incluye vault, materiales, fixtures, una SQLite nueva migrada y los doce soportes autorizados. No incluye claves, historial personal, respaldos, entornos ni cachés. Las pruebas nuevas validan la base y su paquete, no las capacidades pendientes.
 
 ## Respaldo y recuperación
 
@@ -96,6 +98,6 @@ Con el servidor detenido, copia completa datos/practica/ a una ubicación privad
 
 ## Procedencia
 
-Base publicada de la clase 8, commit 096d8fe37259a4c5d363c6eb666dc2976e6d0bc9. No incorpora cambios sin commit de otras carpetas. BASE.json registra la referencia. docs/VALIDACION.md documenta esta preparación. Los antecedentes docentes del módulo 8 se conservan fuera del repositorio.
+Base publicada de la clase 8, commit 096d8fe37259a4c5d363c6eb666dc2976e6d0bc9. No incorpora cambios sin commit de otras carpetas. BASE.json registra la referencia. docs/VALIDACION.md documenta esta preparación; docs/heredado-modulo-8/ conserva antecedentes históricos sin acreditar las nuevas funciones.
 
 No hay banco, transportadora, factura fiscal, reserva de inventario ni movimiento de reembolsos en esta base. Las operaciones permanecen sin verificación bancaria.

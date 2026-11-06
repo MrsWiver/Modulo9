@@ -40,8 +40,10 @@ El 6 de noviembre se amplió la guía a 15 etapas, con preparación desde el rep
 Regresiones de la app local: 65 pruebas aprobadas. Revisión del material HTML con Chrome sin interfaz: 15 etapas, 34 controles de copia, acción de copiar comprobada, anclas y archivos locales vinculados válidos; ancho móvil de página y ventana de 390 píxeles, sin desbordamiento. Capturas de portada, cotización y etapa de cuentas revisadas en escritorio y móvil. Esta revisión corresponde al documento del taller, no a una implementación de esas funciones. Sin claves leídas ni llamadas reales a IA.
 
 
-## Exclusión del material docente
+## Separación entre materiales para estudiantes y documentos del docente
 
-Las carpetas materiales/, docente/, docs/modulo-9/ y docs/heredado-modulo-8/, docs/TALLER.md y los guiones docentes quedan ignorados por Git. Los archivos se retiraron del índice conservando sus copias locales. El paquete de estudiantes excluye ese contenido incluso cuando existe localmente y solo incluye los contratos y la validación técnica de docs/. La app ya no sirve descargas /materiales/ ni enlaza a ellas desde /construccion.
+Se corrigió el alcance de la exclusión: materiales/, docs/modulo-9/, docs/heredado-modulo-8/ y docs/TALLER.md se versionan. La clase, presentación, taller, políticas y casos para estudiantes forman parte del repositorio y del paquete. Solo docente/, guion-docente y GUIA-DOCENTE quedan ignorados y excluidos de la distribución.
 
-Verificación: 65 pruebas aprobadas, incluido empaquetado y arranque independiente sin material docente; rutas docentes devuelven 404. Pantalla de construcción revisada en Chrome y ancho móvil de 390 píxeles sin desbordamiento. No se modificaron el vault, el catálogo ni las funciones comerciales pendientes. Los commits anteriores conservan el material histórico; esta exclusión no reescribe el historial de Git.
+Se restauraron las descargas del taller, políticas y casos y sus enlaces en /construccion. Las pruebas comprueban esas descargas, el arranque independiente del ZIP, la presencia de clase/presentación/taller y la ausencia de documentos exclusivos del docente.
+
+Resultado de la corrección: 65 pruebas aprobadas; /construccion revisada en Chrome con sus tres descargas y sin desbordamiento a 390 píxeles. Reglas de Git comprobadas para incluir materiales estudiantiles y excluir guiones, guía y respuestas del docente.
