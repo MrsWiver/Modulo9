@@ -1,0 +1,32 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+datos/practica/*
+!datos/practica/.gitkeep
+*.pyc
+.DS_Store
+datos/respaldos/
+
+# Metadatos de iconos del Finder (Icon seguido de un carácter).
+Icon?
+
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Entregas y datos locales adicionales
+*.zip
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+.coverage
+htmlcov/
+
+# Solo documentos exclusivos del docente; clase y taller sí se versionan.
+/docente/
+**/*guion-docente.*
+**/GUIA-DOCENTE.*
